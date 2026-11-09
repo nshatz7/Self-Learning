@@ -1,30 +1,52 @@
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+# Contains Duplicate
 
-Example:
-Input: nums = [1,2,3,1]
+## Problem Description
+Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
+
+### Example
+```text
+Input: nums = [1, 2, 3, 1]
 Output: true
-Explanation:
-The element 1 occurs at the indices 0 and 3.
+```
+**Explanation:** The element `1` occurs at indices `0` and `3`.
 
-what I learned:
-        - Using two nested loops results in a time complexity of o(n^2). This is an issue because for large data sets this takes a long amount of time for something simple.
-            -To fix this, use Python data structures that let you test for exisistence with o(1) constant:
-                - set (checks if an item exists, what I used in this problem)
-                - dict (looks up a value via a key)
-        - For loops automatically make the overall function o(n) linear automatically, but loops are sometimes NEEDED for functions (eg. analyzing specific values in a array (not here because we don't care for the actual value, we just care if it was repeated))
-        - When a list containing duplicates is converted to a set, all duplicate items are automatically removed in Python, leaving only a collection of unique items.
-            -To convert a list to a set:
-                my_list = set(my_list)
-        - You don't always have to trade off time and space complexity, but "time-space trade-off" is very common
-				- Conditional for duplicate problems (common on interviews):
-						- Standard safe choices (prioritize in this problem because they make fewer assumptions on vague data):
-								- Hash sets: Excellent time complexity (o(n)), high space complexity (o(n)), unbalanced (fast moving, but have a poor memory score)
-								- Sorting: Good time complexity (o(nlogn)), low space complexity (o(logn)), balanced (good memory score and acceptable runtime)
-						- Alternatives:
-								- The "index marking" technique (sometimes looked for in coding interviews)
-								- Bit Vector / BitSet
-						- When to use them:
-								- Hash set or sorting: Small lists or huge range (e.g. 64 bit ID or sparse data)
-								- Bit Vector: Millions of 32-bit ints (have dense data and/or known boundaries)
-								- The "index marking" technique: The problem guarantees every number is within the range of the arrays length (e.g. [1, 2, 2] (largest and smallest is between 0 and 3)) (if the numbers are randomly distributed across a massive range, floats, or negatives: index marking doesn't work)
-		
+---
+
+## Key Takeaways & What I Learned
+
+### 1. Avoiding Nested Loops (\(O(n^2)\))
+* Using two nested loops results in a quadratic time complexity of **`O(n^2)`**, which becomes too slow for large datasets.
+* **The Fix:** Use Python data structures that allow for **`O(1)`** (constant time) existence checks:
+  * **`set`:** Checks if an item exists (used in my solution).
+  * **`dict`:** Looks up a value via a key.
+
+### 2. Understanding Loops & Sets in Python
+* **Linear Complexity:** Adding a single `for` loop makes a function **`O(n)`** linear. Loops are often necessary when analyzing specific values, though here we only care about duplication rather than the values themselves.
+* **Automatic Deduplication:** Converting a list with duplicates into a `set` automatically strips out duplicate items, leaving only unique elements:
+  ```python
+  unique_items = set(my_list)
+  ```
+
+### 3. The Time-Space Trade-off
+While you don't always have to trade time for space, the **time-space trade-off** is a very common pattern in algorithm design. 
+
+---
+
+## Interview Strategy: Choosing the Right Approach
+
+### Standard Safe Choices
+Prioritize these in interviews when data constraints are vague, as they make the fewest assumptions about the input:
+
+| Approach | Time Complexity | Space Complexity | Trade-off Summary |
+| :--- | :--- | :--- | :--- |
+| **Hash Set** | `O(n)` | `O(n)` | **Unbalanced:** Fast runtime, but requires extra memory. |
+| **Sorting** | `O(n log n)` | `O(1)` or `O(log n)`* | **Balanced:** Good memory score with an acceptable runtime. |
+
+*\*Note: Space complexity for sorting depends on the language's sorting algorithm (e.g., Python's Timsort uses `O(n)` worst-case space, while in-place heapsort uses `O(1)`).*
+
+### Advanced Alternatives & When to Use Them
+* **Hash Set or Sorting:** Best for small lists, sparse data, or numbers spanning a huge range (e.g., 64-bit IDs).
+* **Bit Vector / BitSet:** Best when dealing with millions of 32-bit integers that have dense data and known boundaries.
+* **Index Marking Technique:** Sometimes specifically looked for in coding interviews. 
+  * *Constraint:* Only works if the problem guarantees every number falls within the range of the array's length (e.g., `[1, 2, 2]`, where values are between `0` and `3`). It will **not** work for negative numbers, floats, or numbers distributed across a massive range.
+
