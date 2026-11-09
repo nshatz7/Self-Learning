@@ -28,7 +28,9 @@ Output: true
   ```
 
 ### 3. The Time-Space Trade-off
-While you don't always have to trade time for space, the **time-space trade-off** is a very common pattern in algorithm design. 
+* While you don't always have to trade time for space, the **time-space trade-off** is a very common pattern in algorithm design.
+* .sort() method modifies the original list in place (without using extra memory)
+  * Using this increases time to **`nlogn`** (linearithmic time)
 
 ---
 
