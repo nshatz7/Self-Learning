@@ -1,9 +1,7 @@
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:
-        nums.sort() #This puts all duplicate numbers (if there) next to eachother (doesn't increase space complexity by creating a new variable, but does increase time complexity to NlogN)
-        for i in range(1, len(nums)): #starting at the second number because we are checking if the second is the same as the one before, then so on.
-            if nums[i] == nums[i - 1]:
-                return True #stops the whole functions immediately if there is a duplicate
+        if len(nums) > len(set(nums)):
+            return True
         
         return False #if it couldn't find a duplicate after going through the WHOLE loop
 
