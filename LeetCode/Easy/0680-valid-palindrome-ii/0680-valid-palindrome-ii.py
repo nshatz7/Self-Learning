@@ -2,28 +2,29 @@ class Solution:
     def validPalindrome(self, s: str) -> bool:
         left = 0
         right = len(s) - 1 
-        while left < right:
-            if s[left] == s[right]:
+        while left < right: #while it doesn't cross the middle of the string
+            if s[left] == s[right]: #if no changes need to be made
                 left += 1
                 right -= 1
             else:
-                return self.skipped_left(s[left+1: right+1], s, left, right)
+                return self.skipped_left(s[left+1: right+1], s, left, right) #returns true or false for the left letter skipped (need right+1 though because when slicing, it doesn't include the end value which we need)
 
-        return True
+        return True #return true if the loop completed with never going through else (i.e. it didn't need to subtract)
 
     def skipped_left(self, restl, s, left, right):
+        #make a new left and right value because the string "restl" is smaller
         p1 = 0
         p2 = len(restl) - 1
-        while p1 < p2:
-            if restl[p1] == restl[p2]:
+        while p1 < p2: 
+            if restl[p1] == restl[p2]: #same argument as before but now with a shorter string
                 p1 += 1
                 p2 -= 1
             else:
-                return self.skipped_right(s[left: right], s, left, right)
+                return self.skipped_right(s[left: right], s, left, right) #if it needed to subtract, but not subtract from the left: we check right
 
-        return True
+        return True #if the loop went through without touching the else statement, removing the left character was correct
 
-    def skipped_right(self, restr, s, left, right):
+    def skipped_right(self, restr, s, left, right): #do the same thing we did with skipped_left
         p3 = 0
         p4 = len(restr) - 1
         while p3 < p4:
@@ -31,9 +32,9 @@ class Solution:
                 p3 += 1
                 p4 -= 1
             else:
-                return False
+                return False #this is the last argument so if it doesn't match, it's not a palindrome no matter what so it's going to return False to skipped_left, which then returns False to validPalindrome
 
-        return True
+        return True #if removing the right character was correct
 
 
                 
