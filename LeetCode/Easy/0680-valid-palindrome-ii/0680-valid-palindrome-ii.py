@@ -37,6 +37,16 @@ class Solution:
         return True #if removing the right character was correct
 
 
+    """
+    Time complexity:
+        - In the worst case, it compares characters while moving inward, and upon a mismatch, it recursively checks two possibilities: skipping the left character or skipping the right character. Each of those checks is essentially a linear scan of a substring.
+        - In the worst case, this can lead to O(n) work for the initial pass plus up to two linear scans of substrings of size O(n), yielding O(n) time in typical two-pointer palindrome checks but potentially O(n^2) in worst cases where many recursive checks are triggered. Practically, since only one skip is allowed, the effective time remains close to O(n).
+
+    Space complexity:
+        - The function creates substrings (s[left+1:right+1], and subsequent substrings) which copy characters, leading to additional space usage. Each substring allocation is O(n) in size, and there can be a few such allocations in the worst path, giving O(n) auxiliary space per level of recursion.
+        - Overall auxiliary space is O(n) due to substring copies, plus the implicit call stack depth which is O(1) since the implementation is iterative with a couple of helper methods, but substring allocations dominate.
+    """
+
                 
 
 
