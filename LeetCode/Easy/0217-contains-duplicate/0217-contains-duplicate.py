@@ -5,6 +5,7 @@ class Solution:
         
         return False #if it couldn't find a duplicate after going through the WHOLE loop
 
+
     #Time complexity: O(n) on average, where n is the length of nums. Building the set takes O(n) time and comparing lengths is O(1). Overall still O(n).
     #Space complexity: O(n) in the worst case, since the set may store all n unique elements.
 
