@@ -1,16 +1,13 @@
-from collections import Counter #turns the count of chars in the string into a hash map with how many times it appears
-
+from collections import Counter #Counter gives all the elements in the string and their count as a hash map
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t): #immediately checks if same length, if not: not an anagram and doesnt do rest of function
-            return False
+        return Counter(s) == Counter(t) #if the elements and or their count don't agree, prints false (or the other way around)
 
-        return Counter(t) == Counter(s) #using counter module, returns true if they are the same, returns false if not
 
-    """
-    Time complexity: 
-        - O(n) where n is the length of the strings (s and t). We build two Counter objects each in O(n) time, and comparison of two Counters is O(k) where k is the number of distinct characters (<= n). Overall O(n).
+"""
+Time complexity: 
+    - O(n), where n is the length of the strings combined (specifically, O(len(s) + len(t))). Counter builds frequency maps for both strings in linear time.
 
-    Space complexity: 
-        - O(k) extra space, where k is the number of distinct characters in the inputs (worst case O(n)). The two Counter objects store character frequencies. There is no other significant extra space.
-    """
+Space complexity: 
+    - O(k), where k is the number of distinct characters in the strings (in the worst case O(n) if all characters are unique). Counter stores the frequency for each character, so extra space scales with the alphabet size actually used.
+"""
