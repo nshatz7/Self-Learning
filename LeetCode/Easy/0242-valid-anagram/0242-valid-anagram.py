@@ -1,4 +1,5 @@
 from collections import Counter
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t): #immediately checks if same length, if not: not an anagram and doesnt do rest of function
@@ -7,6 +8,9 @@ class Solution:
         seent = Counter(t)
         seens = Counter(s)
 
+        return seens == seent
+
+        """
         for letter in t:
             if letter in s:
                 if seens[letter] != seent[letter]:
@@ -15,4 +19,4 @@ class Solution:
                 return False    
 
         return True
-        
+        """
