@@ -7,6 +7,10 @@ class Solution:
 
         return Counter(t) == Counter(s) #using counter module, returns true if they are the same, returns false if not
 
-    #Time complexity: O(n) where n is the length of the strings (s and t). We build two Counter objects each in O(n) time, and comparison of two Counters is O(k) where k is the number of distinct characters (<= n). Overall O(n).
+    """
+    Time complexity: 
+        - O(n) where n is the length of the strings (s and t). We build two Counter objects each in O(n) time, and comparison of two Counters is O(k) where k is the number of distinct characters (<= n). Overall O(n).
 
-    #Space complexity: O(k) extra space, where k is the number of distinct characters in the inputs (worst case O(n)). The two Counter objects store character frequencies. There is no other significant extra space.
+    Space complexity: 
+        - O(k) extra space, where k is the number of distinct characters in the inputs (worst case O(n)). The two Counter objects store character frequencies. There is no other significant extra space.
+    """
