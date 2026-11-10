@@ -128,7 +128,7 @@ class Solution:
 
 ### Approach 2: Sorting
 - **Time Complexity:** O(n \log n) — Timsort on both strings.
-- **Space Complexity:** O(n)$ or $O(1) — Depending on Python list allocation for `sorted()`.
+- **Space Complexity:** O(n) or O(1) — Depending on Python list allocation for `sorted()`.
 
 ```python
 class Solution:
