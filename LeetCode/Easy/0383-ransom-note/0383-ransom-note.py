@@ -15,6 +15,14 @@ class Solution:
         
         return True #if it got through the whole second loop without returning false, then it has to be true
 
+
+"""
+Time complexity: 
+    - O(n + m), where n is the length of magazine and m is the length of ransomNote. We traverse magazine once to count letters and then ransomNote once to verify availability.
+
+Space complexity: 
+    - O(1), specifically O(26) for the fixed-size count array (constant space).
+"""
     
     
 
