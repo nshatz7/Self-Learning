@@ -26,12 +26,18 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+| [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+| [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
 <!---LeetCode Topics End-->
