@@ -19,3 +19,19 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 │   ├── cs-fundamentals/
 │   └── cloud-architecture/
 └── weekly-logs/               # Weekly reflections, milestones, and study sprints
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+<!---LeetCode Topics End-->
