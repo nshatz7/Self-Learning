@@ -1,9 +1,5 @@
-Python Core Cheatsheet: Encodings, Strings & Exception Handling
+Python Learning Notes (11-10-26): PCAP 
 ==============================================================
-
-A structured reference guide covering character encoding standards, string mechanics, essential string methods, and robust exception handling in Python.
-
----
 
 Table of Contents
 -----------------
