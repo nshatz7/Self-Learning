@@ -1,52 +1,45 @@
-<h2><a href="https://leetcode.com/problems/isomorphic-strings">205. Isomorphic Strings</a></h2><h3>Easy</h3><hr><p>Given two strings <code>s</code> and <code>t</code>, <em>determine if they are isomorphic</em>.</p>
+# 205. Isomorphic Strings
 
-<p>Two strings <code>s</code> and <code>t</code> are isomorphic if the characters in <code>s</code> can be replaced to get <code>t</code>.</p>
+## Problem Description
+Given two strings `s` and `t`, determine if they are isomorphic.
 
-<p>All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.</p>
+Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+- All occurrences of a character must be replaced with another character while preserving the order of characters.
+- No two characters may map to the same character, but a character may map to itself.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;egg&quot;, t = &quot;add&quot;</span></p>
+---
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
+## Examples
 
-<p><strong>Explanation:</strong></p>
+### Example 1
+- **Input:** `s = "egg"`, `t = "add"`
+- **Output:** `true`
+- **Explanation:**
+  The strings `s` and `t` can be made identical by:
+  - Mapping `'e'` to `'a'`
+  - Mapping `'g'` to `'d'`
 
-<p>The strings <code>s</code> and <code>t</code> can be made identical by:</p>
+### Example 2
+- **Input:** `s = "f11"`, `t = "b23"`
+- **Output:** `false`
+- **Explanation:**
+  The strings `s` and `t` cannot be made identical because `'1'` needs to be mapped to both `'2'` and `'3'`.
 
-<ul>
-	<li>Mapping <code>&#39;e&#39;</code> to <code>&#39;a&#39;</code>.</li>
-	<li>Mapping <code>&#39;g&#39;</code> to <code>&#39;d&#39;</code>.</li>
-</ul>
-</div>
+### Example 3
+- **Input:** `s = "paper"`, `t = "title"`
+- **Output:** `true`
 
-<p><strong class="example">Example 2:</strong></p>
+---
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;f11&quot;, t = &quot;b23&quot;</span></p>
+## Constraints
+- `1 <= s.length <= 5 * 10^4`
+- `t.length == s.length`
+- `s` and `t` consist of any valid ASCII character.
 
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
+---
 
-<p><strong>Explanation:</strong></p>
+## Key Takeaways & Concepts
 
-<p>The strings <code>s</code> and <code>t</code> can not be made identical as <code>&#39;1&#39;</code> needs to be mapped to both <code>&#39;2&#39;</code> and <code>&#39;3&#39;</code>.</p>
-</div>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;paper&quot;, t = &quot;title&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
-	<li><code>t.length == s.length</code></li>
-	<li><code>s</code> and <code>t</code> consist of any valid ascii character.</li>
-</ul>
+- **`zip()`**: Combines elements from multiple iterables (lists, tuples, strings) into a single iterable of paired tuples based on their index.
+- **Bi-directional Mapping**: Ensures a strict one-to-one (bijective) mapping between characters. Using two hash maps (or checking both directions) prevents multiple characters from mapping to the same target character.
