@@ -18,4 +18,12 @@ class Solution:
         return True #loop goes through without failing it must be true
 
 
+"""
+Time complexity: 
+    - O(n), where n is the length of the strings (since we process each position once).  
+Space complexity: 
+    - O(k), where k is the number of distinct characters encountered (in the worst case O(n) for the hash maps).
+"""
+
+
                           
