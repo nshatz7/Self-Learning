@@ -25,6 +25,7 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 | [0205-isomorphic-strings](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0205-isomorphic-strings/) | Easy |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
 | [0290-word-pattern](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0290-word-pattern/) | Easy |
@@ -32,6 +33,7 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 | [0205-isomorphic-strings](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0205-isomorphic-strings/) | Easy |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
 | [0290-word-pattern](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0290-word-pattern/) | Easy |
@@ -39,9 +41,14 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 <!---LeetCode Topics End-->
