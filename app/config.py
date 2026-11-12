@@ -1,0 +1,1 @@
+#stores and manages application settings
