@@ -29,6 +29,7 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 | [0205-isomorphic-strings](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0205-isomorphic-strings/) | Easy |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
 | [0290-word-pattern](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0290-word-pattern/) | Easy |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
 ## String
 | Problem Name | Difficulty |
@@ -43,12 +44,31 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 | [0242-valid-anagram](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0242-valid-anagram/) | Easy |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Bucket Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+## Quickselect
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 <!---LeetCode Topics End-->
