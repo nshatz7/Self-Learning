@@ -108,7 +108,7 @@ I need to memorize these four ASCII code points so I never guess on `ord()` / `c
 
 ---
 
-## Quick-Fire Checklist Before I Sleep
+## Quick-Fire Checklist
 
 * **String `.split()` vs `.split(' ')`:**
   * `"a  b \n c".split()` (no args) groups all whitespace together -> `['a', 'b', 'c']`.
