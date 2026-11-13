@@ -32,6 +32,7 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 | [0290-word-pattern](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0290-word-pattern/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0383-ransom-note](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0383-ransom-note/) | Easy |
+| [0448-find-all-numbers-disappeared-in-an-array](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0448-find-all-numbers-disappeared-in-an-array/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -57,6 +58,7 @@ Rather than just dumping raw code or chasing a high problem count, this repo is 
 | [0049-group-anagrams](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0049-group-anagrams/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0128-longest-consecutive-sequence/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0347-top-k-frequent-elements/) | Medium |
+| [0448-find-all-numbers-disappeared-in-an-array](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0448-find-all-numbers-disappeared-in-an-array/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
