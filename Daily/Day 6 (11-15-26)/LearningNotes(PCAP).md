@@ -1,4 +1,4 @@
-# The Big Picture: 4 Core Pillars
+# PE2 (Module 1) - The Big Picture: 4 Core Pillars
 
 ## 1. Importing & Namespaces (Section 1)
 * **`import mod`**: Keeps `mod`'s namespace separate. You must qualify names (`mod.func()`).
