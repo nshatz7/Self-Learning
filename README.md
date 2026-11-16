@@ -33,6 +33,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 | [0018-4sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0056-merge-intervals](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
+| [0057-insert-interval](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
