@@ -1,4 +1,4 @@
-# PE2 - Module 3: The Big Picture: 4 Core Pillars 
+# PE2 (Module 3) - The Big Picture: 4 Core Pillars 
 
 ---
 
