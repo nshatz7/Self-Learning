@@ -43,3 +43,18 @@ When a client sends a request to `POST /api/v1/leads`, `main.py` directs traffic
 2. **Interception:** `app` passes the request through any registered global middleware.
 3. **Routing:** `app` matches the `/api/v1/leads` URL prefix to the router included from `app/routes/leads.py`.
 4. **Execution & Return:** The route handler executes, calls your service/database layers, and returns data back up the chain through `main.py` to the client.
+
+---
+
+## 4. What *Not* to Do in `main.py`
+
+To maintain a clean composition root and avoid architectural pitfalls, strictly avoid the following anti-patterns inside `app/main.py`:
+
+* **Define route endpoints directly:** Never attach decorators like `@app.get` or `@app.post` directly to `app`; keep all endpoints isolated inside `APIRouter` modules.
+* **Write business logic or database queries:** Delegate data access and domain rules to dedicated service and repository layers.
+* **Hardcode configurations, secrets, or environment values:** Load all settings via a centralized configuration module (e.g., Pydantic `BaseSettings`).
+* **Trigger heavy blocking I/O at the module top level:** Defer database connections, external API calls, or file reads to the `lifespan` manager so importing `app` remains fast and side-effect-free.
+* **Allow other modules to import from `main.py`:** `main.py` sits at the top of the dependency tree; importing from it in lower-level modules creates circular import errors.
+* **Expose raw stack traces or debug modes in production:**
+  * *Never* let unhandled Python exceptions bubble out raw to the client.
+  * *Always* rely on centralized exception handlers so internal file paths, SQL queries, and database details aren't leaked.
