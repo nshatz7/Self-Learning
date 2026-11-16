@@ -41,7 +41,16 @@ class Solution:
 
         return holder
 
+"""
+Time complexity:
+- The algorithm solves the kSum problem recursively. In the worst case, it explores combinations of k numbers from n elements. The number of k-combinations is O(n choose k), and at each level some overhead occurs (sorting initially is O(n log n)).
+- For 4Sum, k is 4, so the dominant term is roughly O(n^3) in the worst case, due to three nested levels of iteration after fixing the first element (e.g., i, then recursive kSum with k-1). The two-pointer base case for k = 2 runs in O(n) for each recursive call.
+- Overall time is O(n^3) in the typical worst case with duplicates removal and pruning, plus the initial sort O(n log n). In sparse or pruned inputs, it can be better.
 
+Space complexity:
+- The algorithm uses extra space for the result storage. In the worst case, the number of found quadruplets can be O(n^4) in pathological inputs, but typically much less; the storage for the result dominates.
+- Additional auxiliary space: the recursion depth is 3 (for k=4, it recurses down to k=2), so the call stack O(k) = O(4) = O(1) auxiliary space. The two-pointer base case uses O(1) extra space. Overall auxiliary space is O(1) aside from the output.
+"""
 
 
 
