@@ -12,4 +12,12 @@ class Solution:
         return merged #return buffer at the end
 
 
+"""
+Time complexity: 
+    - O(n log n) due to sorting the intervals. The merge pass is O(n).
+
+Space complexity: 
+    - O(1) extra space if we modify in place (besides the output list). Since the code builds the merged list in place using the input list and only stores the result in merged, the extra space is O(1) beyond the output. If we count the output, total space is O(n).
+"""
+
         
