@@ -25,6 +25,14 @@ class Solution:
         return merged
 
 
+"""
+Time complexity: 
+    - O(n), where n is the number of input intervals. Each interval is visited a constant number of times: once in the initial pass, once in the merging pass (if overlapping), and once in the final pass.
+
+Space complexity: 
+    - O(n), for storing the resulting merged array. In the worst case, all input intervals are kept (no overlaps with the newInterval), producing a result of size n or n+1.
+"""
+
 
         
 
