@@ -32,16 +32,27 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 | [0018-4sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
+| [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 | [0018-4sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
+| [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 | [0018-4sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
+| [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
+## Quicksort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
+## Bubble Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 <!---LeetCode Topics End-->
