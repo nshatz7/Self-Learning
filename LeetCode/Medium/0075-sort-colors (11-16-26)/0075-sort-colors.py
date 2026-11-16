@@ -17,4 +17,13 @@ class Solution:
                 nums[high], nums[mid] = nums[mid], nums[high] #swapping
                 high -= 1
 
+
+"""
+Time complexity: 
+    - O(n), where n is the length of nums. Each element is swapped at most a couple of times and the pointers low, mid, high traverse the array once.
+
+Space complexity: 
+    - O(1) extra space. It uses only a few integer variables and swaps in place.
+"""
+
         
