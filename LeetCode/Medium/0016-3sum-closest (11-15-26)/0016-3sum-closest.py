@@ -25,6 +25,13 @@ class Solution:
         return closest
 
 
+"""
+Time complexity: 
+    - O(n^2) in the worst case. After sorting (O(n log n)), the two-pointer scanning runs for each i (up to n) with left/right pointers moving at most n steps in total per i, giving O(n^2).
+
+Space complexity: 
+    - O(1) extra space (ignoring the input array and the sorting that may require O(n) auxiliary space depending on the sort implementation; otherwise the algorithm uses a constant amount of extra variables).
+"""
                 
 
         
