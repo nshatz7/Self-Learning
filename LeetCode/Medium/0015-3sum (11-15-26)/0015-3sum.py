@@ -32,5 +32,13 @@ class Solution:
         return combinations
 
 
+"""
+Time complexity: 
+    - O(n^2) in the worst case. The outer loop runs n times, and for each i, the two-pointer inner loop traverses the remainder of the array once, leading to roughly n + (n-1) + ... = O(n^2).
+
+Space complexity: 
+    - O(1) extra space beyond the output. The algorithm sorts in place (in-place sort might use O(log n) recursion stack for quicksort/mergesort depending on implementation), and uses a few pointers and a result list. If counting the output, space is O(k) where k is the number of triplets found.
+"""
+
 
         
