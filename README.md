@@ -23,3 +23,19 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 └── production-projects/    # End-to-end systems and backend services
     ├── lead-management-api/
     └── [project-02]/
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+<!---LeetCode Topics End-->
