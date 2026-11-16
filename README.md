@@ -30,12 +30,15 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0016-3sum-closest/) | Medium |
 <!---LeetCode Topics End-->
