@@ -1,4 +1,4 @@
-# The Big Picture (PE2 Module - 4): 3 Core Pillars
+# PE2 (Module 4) - The Big Picture: 3 Core Pillars
 
 ## 1. Generators, Iterators, Lambdas & Closures (Section 1)
 
