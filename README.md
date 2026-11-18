@@ -35,6 +35,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0056-merge-intervals](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
+| [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -67,8 +68,13 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0020-valid-parentheses/) | Easy |
+| [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0020-valid-parentheses/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 <!---LeetCode Topics End-->
