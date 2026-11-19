@@ -69,6 +69,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0020-valid-parentheses/) | Easy |
 | [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
+| [0155-min-stack](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0155-min-stack/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -77,4 +78,8 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0155-min-stack](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0155-min-stack/) | Medium |
 <!---LeetCode Topics End-->
