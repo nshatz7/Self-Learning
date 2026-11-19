@@ -12,4 +12,12 @@ class Solution:
             stack.append(curr_day) #push into stack to wait for a warmer day
         
         return answer
-        
+
+
+"""
+Time complexity: O(n)
+- Each index is pushed onto the stack exactly once and popped at most once. All operations inside the loop are O(1), so the total time is linear in the number of temperatures.
+
+Space complexity: O(n) in the worst case
+- The stack stores indices of days waiting for a warmer temperature. In the worst case (e.g., strictly decreasing temperatures), all indices remain on the stack, leading to O(n) auxiliary space. The answer array also uses O(n) space.
+"""
