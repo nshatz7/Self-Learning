@@ -18,6 +18,19 @@ PATCH /leads/{lead_id}	LeadUpdate	None	name, email, status
 
 What I Did:
 - created app/schemas/lead.py to define request body models:
+from pydantic import BaseModel
+
+
+#inherits from Pydantic's BaseModel (name and email have no default values, making them required unlike status
+class LeadCreate(BaseModel): 
+    name: str
+    email: str
+    status: str = "new"
+
+class LeadUpdate(BaseModel):
+    name: str | None = None
+    email: str | None = None
+    status: str | None = None
 
 - updates app/routes/leads.py
   - imported LeadCreate and LeadUpdate from app/schemas/lead.py, and then replaced dict on POST, PUT, and PATCH routes
