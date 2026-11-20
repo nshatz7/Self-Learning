@@ -13,3 +13,11 @@ class Solution:
                 max_sum = window_sum #updating max if the next window is larger than previous
             
         return max_sum / k #dividing at end avoids unnecessary floating-point division on every iteration
+
+
+"""
+Time complexity: 
+    - O(n), where n is the length of nums. It computes the initial sum in O(k) and then slides the window across the remaining n-k elements with O(1) work per step, totaling O(n).
+Space complexity: 
+    - O(1), aside from a few scalar variables. It uses constant extra space.
+"""
