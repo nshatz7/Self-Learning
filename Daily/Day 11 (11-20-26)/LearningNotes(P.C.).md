@@ -33,4 +33,16 @@ class LeadUpdate(BaseModel):
     status: str | None = None
 
 - updates app/routes/leads.py
-  - imported LeadCreate and LeadUpdate from app/schemas/lead.py, and then replaced dict on POST, PUT, and PATCH routes
+  - imported LeadCreate and LeadUpdate from app/schemas/lead.py, and then replaced dict on POST, PUT, and PATCH routes:
+from app.schemas.lead import LeadCreate, LeadUpdate
+...
+@router.post("/", status_code=status.HTTP_201_CREATED)  # HTTP method POST
+def create_lead(lead_in: LeadCreate): #FastAPI sees that LeadCreate is a BaseModel, so it automatically parses the incoming JSON request body and validates it
+    new_lead = {
+        "id": len(FAKE_LEADS_DB) + 1,
+        **lead_in.model_dump(), #Converts the validated Pydantic object into a standard Python dictionary so we can unpack it with "**"
+    }
+    FAKE_LEADS_DB.append(new_lead)
+    return new_lead
+
+    
