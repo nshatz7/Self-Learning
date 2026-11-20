@@ -1,3 +1,5 @@
+#validates incoming requests using query parameters and request bodies (imports schemas)
+
 from fastapi import APIRouter, HTTPException, status
 from app.schemas.lead import LeadCreate, LeadUpdate #Pydantic BaseModel's for request bodies
 
