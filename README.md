@@ -39,6 +39,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -96,13 +97,16 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
+| [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
 <!---LeetCode Topics End-->
