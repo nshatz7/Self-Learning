@@ -13,3 +13,9 @@ class LeadUpdate(BaseModel):
     name: str | None = None
     email: str | None = None
     status: str | None = None
+
+class LeadResponse(BaseModel): #defines exact fields allowed in outgoing JSON responses
+    id: int
+    name: str
+    email: str
+    status: str
