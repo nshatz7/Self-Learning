@@ -36,6 +36,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0057-insert-interval](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
+| [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -88,4 +89,8 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0739-daily-temperatures](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 <!---LeetCode Topics End-->
