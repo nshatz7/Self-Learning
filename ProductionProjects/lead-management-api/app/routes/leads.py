@@ -5,12 +5,23 @@ router = APIRouter(prefix="/leads", tags=["Leads"])
 FAKE_LEADS_DB = [
     {"id": 1, "name": "Acme Corp", "status": "new"},
     {"id": 2, "name": "Globex Inc", "status": "contacted"},
+    {"id": 3, "name": "Initech", "status": "new"},
+    {"id": 4, "name": "Umbrella Corp", "status": "qualified"},
 ]
 
 
 @router.get("/", status_code=status.HTTP_200_OK)  # HTTP method GET (all leads)
-def get_leads():
+def get_leads(
+    status: str | None=None, #declares optional query parameter; lets status value be "None"
+    #declares two integer query parameters with default values; if user sends "?limit=abc", FastAPI still automatically validates the type and returns a 422 error ("abc" can't be converted to an integer)
+    skip: int = 0, 
+    limit: int = 10,
+):
     return FAKE_LEADS_DB
+    if status is not None:
+        results = [lead for lead in results if lead["status"] == status] #filters list in memory if a "status" query parameter was passed
+    return results[skip : skip + limit] #list slicing used for pagination (skip = starting index, skip+limit = stopping index)
+    
 
 
 @router.get("/{lead_id}", status_code=status.HTTP_200_OK)  # HTTP method GET (single lead)
