@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException, status
+from app.schemas.lead import LeadCreate, LeadUpdate #Pydantic BaseModel's for request bodies
 
 router = APIRouter(prefix="/leads", tags=["Leads"])
 
@@ -37,20 +38,51 @@ def get_lead_by_id(lead_id: int):
 
 
 @router.post("/", status_code=status.HTTP_201_CREATED)  # HTTP method POST
-def create_lead(lead_data: dict):
-    return {"id": 2, **lead_data}
+def create_lead(lead_in: LeadCreate): #FastAPI sees that LeadCreate is a BaseModel, so it automatically parses the incoming JSON request body and validates it
+    new_lead = {
+        "id": len(FAKE_LEADS_DB) + 1,
+        **lead_in.model_dump(), #Converts the validated Pydantic object into a standard Python dictionary so we can unpack it with "**"
+    }
+    FAKE_LEADS_DB.append(new_lead)
+    return new_lead
+    
+
+@router.put("/{lead_id}", status_code=status.HTTP_200_OK)
+def replace_lead(lead_id: int, lead_in: LeadCreate):
+    for index, lead in enumerate(FAKE_LEADS_DB):
+        if lead["id"] == lead_id:
+            updated_lead = {"id": lead_id, **lead_in.model_dump()}
+            FAKE_LEADS_DB[index] = updated_lead
+            return updated_lead
+
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail=f"Lead with ID {lead_id} not found",
+    )
 
 
-@router.put("/{lead_id}", status_code=status.HTTP_200_OK)  # HTTP method PUT
-def replace_lead(lead_id: int, lead_data: dict):
-    return {"id": lead_id, **lead_data}
+@router.patch("/{lead_id}", status_code=status.HTTP_200_OK)
+def update_lead(lead_id: int, lead_in: LeadUpdate):
+    for lead in FAKE_LEADS_DB:
+        if lead["id"] == lead_id:
+            updates = lead_in.model_dump(exclude_unset=True) #Secret weapon for PATCH requests: If the client only sends {"status":"qualified"}, strips out name and email instead of overwriting with None
+            lead.update(updates)
+            return lead
+
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail=f"Lead with ID {lead_id} not found",
+    )
 
 
-@router.patch("/{lead_id}", status_code=status.HTTP_200_OK)  # HTTP method PATCH
-def update_lead_status(lead_id: int, partial_data: dict):
-    return {"id": lead_id, "updated_fields": partial_data}
-
-
-@router.delete("/{lead_id}", status_code=status.HTTP_204_NO_CONTENT)  # HTTP method DELETE
+@router.delete("/{lead_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_lead(lead_id: int):
-    return None
+    for index, lead in enumerate(FAKE_LEADS_DB):
+        if lead["id"] == lead_id:
+            FAKE_LEADS_DB.pop(index)
+            return None
+
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail=f"Lead with ID {lead_id} not found",
+    )
