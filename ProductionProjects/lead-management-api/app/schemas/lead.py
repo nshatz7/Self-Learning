@@ -1,0 +1,15 @@
+#defines the data shapes (contracts) for incoming and outgoing lead data
+
+from pydantic import BaseModel
+
+
+#inherits from Pydantic's BaseModel (name and email have no default values, making them required unlike status
+class LeadCreate(BaseModel): 
+    name: str
+    email: str
+    status: str = "new"
+
+class LeadUpdate(BaseModel):
+    name: str | None = None
+    email: str | None = None
+    status: str | None = None
