@@ -1,7 +1,7 @@
 #validates incoming requests using query parameters and request bodies (imports schemas)
 
 from fastapi import APIRouter, HTTPException, status
-from app.schemas.lead import LeadCreate, LeadUpdate #Pydantic BaseModel's for request bodies
+from app.schemas.lead import LeadCreate, LeadUpdate, LeadResponse #Pydantic BaseModel's for request bodies and responses
 
 router = APIRouter(prefix="/leads", tags=["Leads"])
 
@@ -13,7 +13,8 @@ FAKE_LEADS_DB = [
 ]
 
 
-@router.get("/", status_code=status.HTTP_200_OK)  # HTTP method GET (all leads)
+# HTTP method GET (all leads)
+@router.get("/", response_model=list[LeadResponse], status_code=status.HTTP_200_OK)  #uses LeadResponse as model and because it is get all, use "list"
 def get_leads(
     status: str | None=None, #declares optional query parameter; lets status value be "None"
     #declares two integer query parameters with default values; if user sends "?limit=abc", FastAPI still automatically validates the type and returns a 422 error ("abc" can't be converted to an integer)
@@ -27,7 +28,7 @@ def get_leads(
     
 
 
-@router.get("/{lead_id}", status_code=status.HTTP_200_OK)  # HTTP method GET (single lead)
+@router.get("/{lead_id}", response_model=LeadResponse, status_code=status.HTTP_200_OK)  # HTTP method GET (single lead)
 def get_lead_by_id(lead_id: int):
     for lead in FAKE_LEADS_DB:
         if lead["id"] == lead_id:
@@ -39,7 +40,7 @@ def get_lead_by_id(lead_id: int):
     )
 
 
-@router.post("/", status_code=status.HTTP_201_CREATED)  # HTTP method POST
+@router.post("/", response_model=LeadResponse, status_code=status.HTTP_201_CREATED)  # HTTP method POST
 def create_lead(lead_in: LeadCreate): #FastAPI sees that LeadCreate is a BaseModel, so it automatically parses the incoming JSON request body and validates it
     new_lead = {
         "id": len(FAKE_LEADS_DB) + 1,
@@ -49,7 +50,7 @@ def create_lead(lead_in: LeadCreate): #FastAPI sees that LeadCreate is a BaseMod
     return new_lead
     
 
-@router.put("/{lead_id}", status_code=status.HTTP_200_OK)
+@router.put("/{lead_id}", response_model=LeadResponse, status_code=status.HTTP_200_OK)
 def replace_lead(lead_id: int, lead_in: LeadCreate):
     for index, lead in enumerate(FAKE_LEADS_DB):
         if lead["id"] == lead_id:
@@ -63,7 +64,7 @@ def replace_lead(lead_id: int, lead_in: LeadCreate):
     )
 
 
-@router.patch("/{lead_id}", status_code=status.HTTP_200_OK)
+@router.patch("/{lead_id}", response_model=LeadResponse, status_code=status.HTTP_200_OK)
 def update_lead(lead_id: int, lead_in: LeadUpdate):
     for lead in FAKE_LEADS_DB:
         if lead["id"] == lead_id:
