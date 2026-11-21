@@ -59,3 +59,11 @@ class Solution:
                 return True
 
         return False
+
+
+"""
+Time complexity: 
+    - O(n2), where n2 is the length of s2. Each position in s2 is visited once for the sliding window, with a constant amount of work per step. The initial counting is O(n1), and the per-step updates are O(1).
+Space complexity: 
+    - O(1) extra space, specifically O(1) for the two fixed-size frequency arrays of length 26, plus a few scalar variables.
+"""
