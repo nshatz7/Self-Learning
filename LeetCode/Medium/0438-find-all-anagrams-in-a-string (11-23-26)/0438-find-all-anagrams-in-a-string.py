@@ -59,3 +59,11 @@ class Solution:
                 result.append(left)
 
         return result
+
+
+"""
+Time complexity: 
+    - O(ns + 26) ≈ O(ns), where ns is the length of s. Each of the ns steps in the sliding window does O(1) work. The initial setup is O(np), with np ≤ ns.
+Space complexity: 
+    - O(1) additional space, specifically O(26) for the two fixed-size frequency arrays. No extra data structures that scale with input size.
+"""
