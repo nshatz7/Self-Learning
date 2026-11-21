@@ -20,4 +20,11 @@ class Solution:
             max_len = max(max_len, right - left + 1)
         
         return max_len
-        
+
+
+"""
+Time complexity: 
+    - O(n), where n is the length of the string s. Each character is added to the window once (right increases from 0 to n-1) and each character can be removed from the window at most once (left increases up to n). All operations inside the loop are O(1).
+Space complexity: 
+    - O(1) for the counts dictionary, since it stores a fixed number of character counts (at most the size of the alphabet, which is a constant factor with respect to n).
+"""        
