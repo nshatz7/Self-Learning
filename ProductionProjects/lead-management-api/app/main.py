@@ -28,6 +28,12 @@ app = FastAPI(
     lifespan = lifespan
 )
 
+api_v1_router = APIRouter(prefix="/api/v1") #creates a top-level router whose only job is prefixing everything attached to it with "/api/v1/"
+api_v1_router.include_router(leads.router) #nests the "leads" router inside "api_v1_router" (FastAPI automatically concatenates their prefixes)
+
+app.include_router(api_v1_router) #mounts the entire v1 router tree onto the main FastAPI application
+
+
 #global middleware
 app.add_middleware(
     CORSMiddleware, #the middleware class itself (without parenthases, FastAPI instantiates it internally)
