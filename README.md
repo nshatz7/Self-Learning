@@ -72,6 +72,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0020-valid-parentheses](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0020-valid-parentheses/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
+| [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
@@ -102,6 +103,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
+| [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
@@ -121,5 +123,6 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
+| [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
 <!---LeetCode Topics End-->
