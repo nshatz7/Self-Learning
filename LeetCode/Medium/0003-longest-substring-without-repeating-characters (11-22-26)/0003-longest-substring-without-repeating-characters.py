@@ -13,4 +13,11 @@ class Solution:
             max_len = max(max_len, right - left + 1) #calculate current window size and update if bigger
 
         return max_len
-        
+
+
+"""
+Time complexity: 
+    - O(n), where n is the length of the string. Each character is visited once by the right pointer and each dictionary operation is O(1) on average.
+Space complexity: 
+    - O(min(n, m)) where m is the size of the character set. In the worst case the last_seen dictionary stores up to n distinct characters, but it cannot exceed the number of possible characters in the input alphabet.
+"""     
