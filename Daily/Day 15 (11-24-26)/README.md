@@ -1,7 +1,48 @@
+Day 15 - Self Learning Log
+
+Agenda
+LeetCode:
+- #76 Minimum Window Sliding
+- #239 Sliding Window Maximum
+Learning:
+- Core focus: Master sliding window with auxiliary demand tracking; monotonic deque optimization.
+- Secondary focus: AWS-Dev (course 6)
+Production Code:
+- Project 1: Backend Development (OpenAPI Documentation)
+
+Conclusion
+Completed:
+- LeetCode problems with full README's
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Core Daily Question: What is sliding window with auxiliary demand tracking and monotonic deque optimization?
 
 Sliding window with auxiliary demand tracking:
+Instead of comparing two frequency maps at every step (which costs O(K) time where K is the alphabet size), track unresolved debt in O(1) per pointer movement:
 
+Demand Map (need): Store the required count of each character from t.
+Missing Counter (missing): Initialize to len(t). This represents the total number of required characters still owed to make the window valid.
+Expand (right pointer):
+As s[right] enters the window, check if need[char] > 0. If so, this character pays off part of your debt—decrement missing.
+Always decrement need[char]. Characters not in t (or extra duplicates) naturally drop into negative numbers, representing a "surplus".
+Contract (left pointer):
+Once missing == 0, the window is valid. Shrink from the left to minimize the window length until validity breaks:
+Update the minimum window bounds (start, end) if right - left + 1 is a new minimum.
+Before removing s[left], increment need[s[left]].
+If need[s[left]] > 0, you just evicted a critical character that had zero surplus. Increment missing, which exits the contraction loop and forces right to expand again.
 
 Monotonic Deque Optimization:
 If you use a Max-Heap, finding the maximum takes O(1), but removing out-of-bounds elements takes O(log k), yielding O(N log k) overall. A Monotonic Decreasing Deque drops this to O(N) by aggressively pruning useless elements:
