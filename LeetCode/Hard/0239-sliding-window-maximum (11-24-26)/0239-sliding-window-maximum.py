@@ -21,3 +21,11 @@ class Solution:
                 result.append(nums[dq[0]])
                 
         return result
+
+
+"""
+Time complexity: 
+    - O(n), where n is the length of nums. Each index is pushed and popped from the deque at most once, and each step inside the loop is O(1).
+Space complexity: 
+    - O(k) in the worst case, since the deque stores indices of elements currently in or potentially contributing to the sliding window, up to k elements. The result list uses O(n) space for the output anyway.
+"""
