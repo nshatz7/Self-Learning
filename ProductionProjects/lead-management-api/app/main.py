@@ -1,64 +1,50 @@
-from fastapi import FastAPI
 from contextlib import asynccontextmanager
+from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.config import settings
 from app.routes import leads
-from app.core.exceptions import (
-    #exception classes and handlers
-)
 
 
-
-@asynccontextmanager #decorator
-async def lifespan(app: FastAPI): #defining asynccontextmanager function names "lifespan" that accepts the app instance
-    #startup logic (anything before "yield")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup logic (runs before the app begins accepting requests)
     print("Starting Lead Management API")
-
     yield
-
-    #shut-down logic (anything after "yield")
+    # Shutdown logic (runs when the server stops)
     print("Shutting Down Lead Management API")
 
 
-#instantiating the FastAPI application
+tags_metadata = [
+    {
+        "name": "Leads",
+        "description": "Operations for creating, retrieving, updating, and deleting customer leads.",
+    },
+]
+
+# Instantiate the FastAPI application
 app = FastAPI(
-    title = settings.PROJECT_NAME,
-    version = settings.VERSION,
-    description = settings.DESCRIPTION,
-    lifespan = lifespan
+    title=settings.PROJECT_NAME,
+    version=settings.VERSION,
+    description=settings.DESCRIPTION,
+    openapi_tags=tags_metadata,
+    lifespan=lifespan,
 )
 
-api_v1_router = APIRouter(prefix="/api/v1") #creates a top-level router whose only job is prefixing everything attached to it with "/api/v1/"
-api_v1_router.include_router(leads.router) #nests the "leads" router inside "api_v1_router" (FastAPI automatically concatenates their prefixes)
-
-app.include_router(api_v1_router) #mounts the entire v1 router tree onto the main FastAPI application
-
-
-#global middleware
+# Global middleware
 app.add_middleware(
-    CORSMiddleware, #the middleware class itself (without parenthases, FastAPI instantiates it internally)
-    allow_origins=settings.CORS_ORIGINS, #pulls list of trusted frontend URLs so browser knows which domains are permitted to make requests to API
-    allow_credentials=True, #Allows browsers to send cookies or AUTHORIZATION headers
-    allow_methods=["*"], #Permits all HTTP methods
-    allow_headers=["*"], #Permits all HTTP request headers
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-#gloabl exception handlers
-app.add_exception_handler(#exceptions)
-    
-#Modular routers
-app.include_router(leads.router)
+# Global exception handlers (will be wired up in Milestone 8)
+# app.add_exception_handler(...)
 
+# Versioned API routers
+api_v1_router = APIRouter(prefix="/api/v1")
+api_v1_router.include_router(leads.router)
 
-    
-
-
-
-    
-
-    
-
-
-
-
-
+app.include_router(api_v1_router)
