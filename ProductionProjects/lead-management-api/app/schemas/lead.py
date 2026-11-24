@@ -1,6 +1,6 @@
 #defines the data shapes (contracts) for incoming and outgoing lead data
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 #inherits from Pydantic's BaseModel (name and email have no default values, making them required unlike status
