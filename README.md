@@ -37,6 +37,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
 | [0643-maximum-average-subarray-i](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/1004-max-consecutive-ones-iii/) | Medium |
@@ -104,6 +105,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
@@ -128,4 +130,20 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
+## Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
+## Monotonic Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
+## Range Minimum/Maximum Query
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
 <!---LeetCode Topics End-->
