@@ -33,9 +33,22 @@ def get_leads(
     limit = pagination["limit"]
     return results[skip : skip + limit] #list slicing used for pagination (skip = starting index, skip+limit = stopping index)
     
-
-@router.get("/{lead_id}", response_model=LeadResponse, status_code=status.HTTP_200_OK)  # HTTP method GET (single lead)
+# HTTP method GET (single lead)
+@router.get(
+    "/{lead_id}", 
+    response_model=LeadResponse, 
+    status_code=status.HTTP_200_OK
+    summary="Retrieve a single lead by ID", #FastAPI uses summary as the short headline next to the URL in /docs, and renders the Markdown docstring inside the expanded endpoint description
+    responses={ #Explicitly declaring 404 documents your business logic exceptions for API consumers.
+        404: {"description": "Lead not found"},
+    },
+) 
 def get_lead_by_id(lead_id: int):
+    """
+    Fetch detailed public information for a specific customer lead:
+
+    - **lead_id**: The unique integer identifier of the lead.
+    """
     for lead in FAKE_LEADS_DB:
         if lead["id"] == lead_id:
             return lead
