@@ -15,3 +15,11 @@ class Solution:
             curr = next_temp       # 4. Advance curr
             
         return prev
+
+
+"""
+Time complexity: 
+    - O(n), where n is the number of nodes in the list.
+Space complexity: 
+    - O(1), since it uses a few pointers and does not allocate any extra data structures.
+"""
