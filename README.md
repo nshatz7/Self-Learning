@@ -71,6 +71,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0020-valid-parentheses](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0020-valid-parentheses/) | Easy |
+| [0076-minimum-window-substring](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
@@ -101,6 +102,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0076-minimum-window-substring](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0209-minimum-size-subarray-sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0209-minimum-size-subarray-sum/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
@@ -122,6 +124,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0076-minimum-window-substring](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
