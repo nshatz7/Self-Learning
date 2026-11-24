@@ -28,3 +28,11 @@ class Solution:
         sublist_tail.next = curr    # Connect new sublist tail (`left`) to node after `right`
 
         return dummy.next
+
+
+"""
+Time complexity: 
+    - O(n), where n is the number of nodes in the list. Each node is visited a constant number of times (once to reach the left boundary and once during the reversal).
+Space complexity: 
+    - O(1) auxiliary space. The algorithm uses a fixed number of pointers (dummy, before_sublist, sublist_tail, prev, curr, next_temp) regardless of list size. No extra data structures are allocated.
+"""
