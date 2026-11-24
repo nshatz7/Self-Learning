@@ -22,16 +22,17 @@ def pagination_params( #dependancy that FastAPI automaticallly inspects its para
 @router.get("/", response_model=list[LeadResponse], status_code=status.HTTP_200_OK)  #uses LeadResponse as model and because it is get all, use "list"
 def get_leads(
     status: str | None=None, #declares optional query parameter; lets status value be "None"
-    #declares two integer query parameters with default values; if user sends "?limit=abc", FastAPI still automatically validates the type and returns a 422 error ("abc" can't be converted to an integer)
-    skip: int = 0, 
-    limit: int = 10,
+    pagination: dict[str, int] = Depends(pagination_params), #tells FastApi to run pagination_params before running get_leads, then assigns its assigned dict to pagination parameters
 ):
-    return FAKE_LEADS_DB
+    results = FAKE_LEADS_DB
+
     if status is not None:
         results = [lead for lead in results if lead["status"] == status] #filters list in memory if a "status" query parameter was passed
+
+    skip = pagination["skip"]
+    limit = pagination["limit"]
     return results[skip : skip + limit] #list slicing used for pagination (skip = starting index, skip+limit = stopping index)
     
-
 
 @router.get("/{lead_id}", response_model=LeadResponse, status_code=status.HTTP_200_OK)  # HTTP method GET (single lead)
 def get_lead_by_id(lead_id: int):
