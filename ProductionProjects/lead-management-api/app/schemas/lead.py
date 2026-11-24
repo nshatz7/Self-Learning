@@ -9,6 +9,18 @@ class LeadCreate(BaseModel):
     email: str
     status: str = "new"
 
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "name": "Stark Industries",
+                    "email": "tony@starkindustries.com",
+                    "status": "new",
+                }
+            ]
+        }
+    )
+
 class LeadUpdate(BaseModel):
     name: str | None = None
     email: str | None = None
