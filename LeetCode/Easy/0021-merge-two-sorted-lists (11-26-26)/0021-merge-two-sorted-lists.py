@@ -24,3 +24,11 @@ class Solution:
 
         # dummy.next points to the true head of the merged list
         return dummy.next
+
+
+"""
+Time complexity: 
+    - O(n + m), where n and m are the lengths of the two input lists. Each node is visited exactly once and appended to the merged list.
+Space complexity: 
+    - O(1) auxiliary space (not counting the output list). The algorithm uses a constant number of extra pointers (dummy, curr). The merged list reuses the nodes from the input lists.
+"""
