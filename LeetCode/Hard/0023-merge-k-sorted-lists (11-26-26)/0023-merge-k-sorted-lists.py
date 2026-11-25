@@ -45,3 +45,13 @@ class Solution:
             return self.mergeTwoLists(l1, l2)
 
         return merge_range(0, len(lists) - 1)
+
+
+"""
+Time complexity:
+- Merging two lists with length m and n takes O(m + n).
+- In mergeKLists, we recursively merge ranges in a divide-and-conquer fashion, resulting in O(k log k) merge steps over the total N nodes, giving overall time complexity O(N log k) where N is the total number of nodes across all lists and k is the number of lists.
+Space complexity:
+- The iterative mergeTwoLists uses O(1) extra space besides the new links (constant extra pointers).
+- The recursive approach for mergeKLists uses stack space proportional to the recursion depth, which is O(log k). The total auxiliary space is O(log k); the resulting merged list uses existing nodes, so no extra node allocations are required.
+"""
