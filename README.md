@@ -149,10 +149,12 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0021-merge-two-sorted-lists/) | Easy |
 | [0092-reverse-linked-list-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0092-reverse-linked-list-ii/) | Medium |
 | [0206-reverse-linked-list](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0206-reverse-linked-list/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0021-merge-two-sorted-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0206-reverse-linked-list/) | Easy |
 <!---LeetCode Topics End-->
