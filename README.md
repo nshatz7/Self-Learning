@@ -137,6 +137,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0239-sliding-window-maximum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0239-sliding-window-maximum/) | Hard |
 ## Monotonic Queue
 | Problem Name | Difficulty |
@@ -150,6 +151,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0021-merge-two-sorted-lists/) | Easy |
+| [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0092-reverse-linked-list-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0092-reverse-linked-list-ii/) | Medium |
 | [0206-reverse-linked-list](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0206-reverse-linked-list/) | Easy |
 ## Recursion
@@ -157,4 +159,16 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0021-merge-two-sorted-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0206-reverse-linked-list/) | Easy |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
+## Tournament Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 <!---LeetCode Topics End-->
