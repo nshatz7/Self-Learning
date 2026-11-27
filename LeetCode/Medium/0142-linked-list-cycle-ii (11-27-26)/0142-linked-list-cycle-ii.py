@@ -28,4 +28,11 @@ class Solution:
         # No cycle found.
         return None
 
+
+"""
+Time complexity: 
+    - O(n) where n is the number of nodes in the list. In the worst case, the first phase traverses up to 2n steps to detect a cycle, and the second phase traverses up to n steps to locate the entry.
+Space complexity: 
+    - O(1) extra space, since only a fixed number of pointers are used.
+"""
             
