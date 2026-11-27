@@ -50,6 +50,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0018-4sum](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0075-sort-colors](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0141-linked-list-cycle](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
+| [0142-linked-list-cycle-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
@@ -129,6 +130,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0003-longest-substring-without-repeating-characters](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0141-linked-list-cycle](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
+| [0142-linked-list-cycle-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0567-permutation-in-string/) | Medium |
@@ -156,6 +158,7 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | [0023-merge-k-sorted-lists](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0092-reverse-linked-list-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0092-reverse-linked-list-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
+| [0142-linked-list-cycle-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 | [0206-reverse-linked-list](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0206-reverse-linked-list/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -178,4 +181,5 @@ Rather than dumping raw code or chasing a high problem count, this repo is built
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
+| [0142-linked-list-cycle-ii](https://github.com/nshatz7/Self-Learning/tree/main/LeetCode/Medium/0142-linked-list-cycle-ii/) | Medium |
 <!---LeetCode Topics End-->
