@@ -28,4 +28,11 @@ class Solution:
         # Reached the end without meeting, so no cycle exists.
         return False
 
+
+"""
+Time complexity: 
+    - O(n), where n is the number of nodes before the cycle plus the cycle length. The slow and fast pointers traverse the list, and the fast pointer moves twice per step, so the loop runs in linear time relative to the list size until a collision or end is reached.
+Space complexity: 
+    - O(1), since only two pointers are used and no extra data structures are allocated.
+"""
             
